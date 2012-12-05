@@ -1,0 +1,16 @@
+runners:
+  emr:
+    # be careful when editing this file
+    # spaces vs tabs are important
+    aws_access_key_id: AKIAIVA7Z6JQPDERQEIQ
+    # if you want to run in a different region
+    # set it here
+    # aws_region: us-west-1
+    aws_secret_access_key: PWsyQJdyCG1MuolKRSFl1b/4Mv32m3NM8WViqDcQ
+    # see the following link for different instance types.  
+    # use api names. http://aws.amazon.com/ec2/instance-types/
+    ec2_instance_type: m1.small
+    num_ec2_instances: 5
+    check_emr_status_every: 5
+    bootstrap_comds:
+    - suod apt-get install -y python-sklearn

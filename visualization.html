@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>map visualization</title>
+    <script src="http://d3js.org/d3.v2.js"></script>
+    <style>
+        .background {
+            fill: none;
+            pointer-events: all;
+        }
+
+        #states {
+          fill: #aaa;
+          stroke: #fff;
+          stroke-width: 1.5px;
+        }
+
+        #states .active {
+          fill: steelblue;
+        }
+    </style>
+</head>
+<body>
+    <script>  
+
+    
+    var xym = d3.geo.mercator();
+    path = d3.geo.path().projection(xym);
+    
+    var translate = xym.translate();
+    translate[0] = 7330;
+    translate[1] = 3400;
+    
+    xym.translate(transloate);
+    xym.scale(30000);
+    
+    
+
+    </script>
+</body>
+</html>
